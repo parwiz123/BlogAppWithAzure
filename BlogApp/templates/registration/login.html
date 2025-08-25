@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Login{% endblock %}
+
+{% block style %}
+<style>
+    .login_style {
+      width:500px;
+      margin:auto;
+
+    }
+  </style>
+
+
+{% endblock %}
+
+{% block body %}
+  <div class="container login_style mt-5">
+    <h1>Login User</h1>
+    <p>Use the following form for login</p>
+    <form action="" method="post" novalidate>
+
+      {% csrf_token %}
+
+      <!-- Render form fields using Crispy Forms -->
+      {{ form|crispy }}
+
+      <button type="submit" class="btn btn-success">Login</button>
+    </form>
+  </div>
+{% endblock %}
