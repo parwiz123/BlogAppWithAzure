@@ -31,6 +31,10 @@ jobs:
       
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: Collect static files
+        run: |
+          python manage.py collectstatic --noinput
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
@@ -58,4 +62,5 @@ jobs:
         with:
           app-name: 'django-blog'
           slot-name: 'Production'
+
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D436D6F59D5D4A29B4E8146896EE714C }}
