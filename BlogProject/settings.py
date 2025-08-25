@@ -26,7 +26,13 @@ SECRET_KEY = 'django-insecure-=-rd-yap0p(-7xm1j+-4x%52g=sdr5rqdon+2k9jl&nd4h@xqu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
 ALLOWED_HOSTS = ['django-blog-edc2gcamanbncjeu.centralindia-01.azurewebsites.net']
+
+CSRF_TRUSTED_ORIGINS = [
+    "django-blog-edc2gcamanbncjeu.centralindia-01.azurewebsites.net",
+]
 
 
 # Application definition
