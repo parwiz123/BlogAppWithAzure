@@ -28,10 +28,13 @@ DEBUG = True
 
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
-ALLOWED_HOSTS = ['django-blog-edc2gcamanbncjeu.centralindia-01.azurewebsites.net']
+ALLOWED_HOSTS = ['karjoyan.com','www.karjoyan.com']
+
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://django-blog-edc2gcamanbncjeu.centralindia-01.azurewebsites.net",
+    "https://karjoyan.com",
+    "https://www.karjoyan.com",
+    "https://django-blog-edc2gcamanbncjeu.centralindia-01.azurewebsites.net"
 ]
 
 # Application definition
