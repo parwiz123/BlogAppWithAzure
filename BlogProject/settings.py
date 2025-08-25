@@ -31,9 +31,8 @@ SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 ALLOWED_HOSTS = ['django-blog-edc2gcamanbncjeu.centralindia-01.azurewebsites.net']
 
 CSRF_TRUSTED_ORIGINS = [
-    "django-blog-edc2gcamanbncjeu.centralindia-01.azurewebsites.net",
+    "https://django-blog-edc2gcamanbncjeu.centralindia-01.azurewebsites.net",
 ]
-
 
 # Application definition
 
